@@ -31,11 +31,12 @@
                 <button type="submit" class="btn btn-lg btn-primary w-100 fs-6">Login</button>
             </div>
             <div class="input-group mb-3">
-                <button class="btn btn-lg btn-light w-100 fs-6"><img th:src="@{|/image/icon-google.png|}"
-                                                                     style="width:20px"
-                                                                     class="me-2" alt=""><small>Sign In with
+                <a type="button" th:href="@{/oauth2/authorization/google}" class="btn btn-lg btn-light w-100 fs-6"><img
+                        th:src="@{|/image/icon-google.png|}"
+                        style="width:20px"
+                        class="me-2" alt=""><small>Sign In with
                     Google</small>
-                </button>
+                </a>
             </div>
         </form>
         <div class="row">

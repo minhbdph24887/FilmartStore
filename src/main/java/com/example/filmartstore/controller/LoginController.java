@@ -3,13 +3,19 @@ package com.example.filmartstore.controller;
 import com.example.filmartstore.auth.AccountRequest;
 import com.example.filmartstore.auth.AccountResponse;
 import com.example.filmartstore.service.AuthorityService;
+import com.example.filmartstore.service.JwtService;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
+import org.springframework.security.oauth2.core.user.DefaultOAuth2User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.io.IOException;
+import java.security.Principal;
 
 @Controller
 @RequestMapping(value = "/filmart/login/")

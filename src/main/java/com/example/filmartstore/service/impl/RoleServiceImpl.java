@@ -6,6 +6,8 @@ import com.example.filmartstore.service.RoleService;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @Transactional
 public class RoleServiceImpl implements RoleService {

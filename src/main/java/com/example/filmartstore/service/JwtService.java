@@ -9,4 +9,6 @@ public interface JwtService {
     String generateToken(Account detailAccountByEmail, Collection<SimpleGrantedAuthority> authorities);
 
     String generateRefreshToken(Account detailAccountByEmail, Collection<SimpleGrantedAuthority> authorities);
+
+//    String loginOAuthGoogle(GoogleResponse googleResponse);
 }

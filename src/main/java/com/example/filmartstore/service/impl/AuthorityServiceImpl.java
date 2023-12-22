@@ -9,6 +9,7 @@ import com.example.filmartstore.repository.RoleRepository;
 import com.example.filmartstore.service.AuthorityService;
 import com.example.filmartstore.service.JwtService;
 import jakarta.transaction.Transactional;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
